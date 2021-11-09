@@ -10,7 +10,7 @@ const loggerOptions = {
     new winston.transports.Console(),
     new winston.transports.File({ filename: LOG_FILE_PATH }),
     new ElasticsearchTransport({ 
-      indexPrefix: 'frontend',
+      indexPrefix: 'frontend-service',
       clientOpts: { node: LOG_ELASTICSEARCH_ENDPOINT } 
     }),
   ],
